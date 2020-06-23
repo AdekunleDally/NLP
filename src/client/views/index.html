@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Natural Language Processing:: AylienData</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "grid-container">
+      <div class ="header">
+        Natural Language Processing:: Aylien
+      </div>
+      <!--Beginning of Section-->
+      <div class=section>
+        <div class ="holder-input">
+            <form class="AylienInput-form" onsubmit="return Client.handleSubmit(event)">
+                <input type="url"  class="txt-class"id="text" name="input" value=""  placeholder="input Data...">
+                <input type="submit" class="btn-class" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+            </form>
+          </div>
+
+        <div class ="holder-entry">
+            <div id = "parameters">
+              The Polarity is :  <p id = "polarity"> </p> 
+              The Subjectivity is :<p id = "subjectivity"> </p>
+              The Url is :<p id = "content"> </p>
+              The polarity_confidence is :<p id = "polarity_confidence"> </p>
+              The subjectivity_confidence is :<p id = "subjectivity_confidence"> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Section-->
+      <footer  class="footer">
+        <p><b>&copy; Copyright 2020. DallyTech. All rights reserved.</b></p>
+     </footer>
+
+     <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+     </script>
+  </body>
+</html>

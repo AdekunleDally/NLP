@@ -1,0 +1,17 @@
+.footer {
+  display:flex;
+  border: 2px solid none;
+  background-color: black;
+  font-style: italic;
+  grid-area: footer;
+  font-size: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  grid-gap: 10px;
+  text-align: center;
+  margin-bottom:5px;
+  padding-top:30px;     
+}
